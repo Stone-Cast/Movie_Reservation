@@ -23,8 +23,8 @@ app.use("/", moviesRoutes);
 app.use("/auth", authRoutes);
 app.use("/admin", verifyAdmin, adminRoutes);
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Listening on port ${port}`);
+// });
 
 export default app;
