@@ -6,7 +6,7 @@ const router = Router();
 const DOMAIN_MAP: Record<string, number> = {
     "cinemax.com": 1,
     "grandcinema.com": 2,
-    localhost: 3,
+    "movies-on-air.vercel.app": 3,
 };
 
 router.get("/movies", async (req, res) => {
