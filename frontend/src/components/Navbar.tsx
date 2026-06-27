@@ -1,9 +1,8 @@
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 import { useUserContext } from "../contexts/AuthContext";
 
 const Navbar = () => {
     const { userData, updateUserData } = useUserContext();
-    const [, setLocation] = useLocation();
     const apiUrl = import.meta.env.VITE_BACKEND_URL;
 
     function handleLogout() {
